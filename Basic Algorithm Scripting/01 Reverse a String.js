@@ -23,15 +23,20 @@ https://www.freecodecamp.org/brewcoffeesplash
 */
 
 
+
 function reverseString(str) {
-  console.log("Original str: " + str);
+  // console.log("Original str: " + str);
   str = str.split(""); //split into an array;
-  console.log("After split str: " + str);
+  // console.log("After split str: " + str);
 
-  str = str.reverse();
-  console.log("After reverse str: " + str);
-
-  str = str.join("");
+  str = str.reverse(); //reverse the array
+  // console.log("After reverse str: " + str);
+      
+  str = str.join(""); // turn contents of array into single string, no separator
   return str;
+  /*
+  Alt:  Single-line of code
+  return.str.split("").reverse().join("");
+  */
 }
 reverseString("Greetings from Earth");
